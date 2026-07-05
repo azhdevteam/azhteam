@@ -206,6 +206,38 @@ section.tight { padding: 0 0 5.5rem; }
 .why-card h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.6rem; letter-spacing: -0.01em; }
 .why-card p { font-size: 0.87rem; line-height: 1.65; color: var(--muted); }
 
+/* ── Flagship case study ── */
+.flagship-case {
+  background: linear-gradient(180deg, rgba(96,165,250,0.06), transparent 40%), var(--surface);
+  border: 1px solid var(--border-h); border-radius: var(--radius);
+  padding: 2.5rem; margin-bottom: 2.5rem;
+}
+.flagship-tag {
+  display: inline-block; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.12em;
+  color: var(--accent); font-weight: 700; margin-bottom: 0.9rem;
+}
+.flagship-top h3 { font-size: 1.4rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.5rem; max-width: 40ch; }
+.flagship-meta { font-size: 0.85rem; color: var(--muted); margin-bottom: 1.5rem; }
+.flagship-summary { font-size: 0.95rem; line-height: 1.75; color: rgba(255,255,255,0.65); max-width: 80ch; margin-bottom: 2rem; }
+
+.flagship-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem; }
+@media (max-width: 760px) { .flagship-grid { grid-template-columns: 1fr; } }
+.flagship-col strong { display: block; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--subtle); font-weight: 600; margin-bottom: 0.9rem; }
+.flagship-list { list-style: none; display: flex; flex-direction: column; gap: 0.7rem; }
+.flagship-list li {
+  font-size: 0.85rem; line-height: 1.6; color: var(--muted); padding-left: 1.1rem; position: relative;
+}
+.flagship-list li::before {
+  content: ""; position: absolute; left: 0; top: 0.5em; width: 5px; height: 5px; border-radius: 50%;
+  background: var(--accent);
+}
+.flagship-list li b { color: rgba(255,255,255,0.85); font-weight: 600; }
+
+.work-grid-label {
+  font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--subtle);
+  font-weight: 600; margin-bottom: 1.1rem;
+}
+
 /* ── Portfolio / work ── */
 .work-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
 @media (max-width: 900px) { .work-grid { grid-template-columns: 1fr; } }

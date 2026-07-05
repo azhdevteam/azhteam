@@ -221,7 +221,58 @@
   <section id="portfolio" class="reveal">
     <div class="section-head"><span>Selected Work</span></div>
     <h2 class="section-title">Real systems, running in production.</h2>
-    <p class="section-desc">A sample of the Smart Port Management platform our team architected and now operates end-to-end across 14 commercial terminals.</p>
+    <p class="section-desc">From a 5-site enterprise rail platform to the Smart Port Management system our team architected and still operates end-to-end across 14 commercial terminals.</p>
+
+    <div class="flagship-case">
+      <div class="flagship-top">
+        <span class="flagship-tag">Flagship Engagement</span>
+        <h3>Etihad Rail — Multi-Site Rail & Terminal Operations Platform</h3>
+        <p class="flagship-meta">National rail operator · 5 live terminal sites · AWS EKS · Actively maintained through 2025</p>
+      </div>
+      <p class="flagship-summary">
+        Took over full technical ownership of Etihad Rail's multi-terminal logistics platform — 40+ microservice
+        repositories running across 5 live sites — following a vendor transition, and have operated, extended, and
+        modernized it since. The platform coordinates rail and truck gate operations, vehicle booking, yard tracking,
+        and rail gateways into one centrally-managed system with a live control-tower dashboard.
+      </p>
+
+      <div class="flagship-grid">
+        <div class="flagship-col">
+          <strong>Highlights</strong>
+          <ul class="flagship-list">
+            <li>Assumed full technical ownership of a 40+ microservice platform after vendor handover, including the complete Kubernetes deployment lifecycle across 5 physical sites on AWS EKS</li>
+            <li>Designed and built 6 independent .NET Core integration services (Clean/Onion architecture, CQRS with MediatR, message-driven via MassTransit/RabbitMQ)</li>
+            <li>Automated multi-site deployment with a multi-repo Helm chart pipeline for repeatable rollouts across mixed Windows/Linux workloads</li>
+            <li>Built a custom Vue 3 + TypeScript control-tower dashboard with Arabic/RTL support and geospatial yard visualization</li>
+            <li>Implemented platform-wide SSO (Keycloak) as version-controlled infrastructure, securing staff access and service-to-service integration</li>
+            <li>Delivered centralized observability (ELK + Prometheus/Grafana) with live per-site dashboards for yard occupancy, turnaround time, and container throughput</li>
+            <li>Backed by a dedicated system-level test suite validating cross-service integration end-to-end</li>
+          </ul>
+        </div>
+        <div class="flagship-col">
+          <strong>Systems Integrated</strong>
+          <ul class="flagship-list">
+            <li><b>Central Terminal Operating System (CTOS)</b> — the control-tower hub aggregating operations from all 5 sites into one live view</li>
+            <li><b>Local Terminal Operating System (LTOS)</b> — per-site gateway layer connecting local operations back to the central hub</li>
+            <li><b>Train Management System</b> — real-time sync between the national train management system and terminal gate operations</li>
+            <li><b>Vehicle Booking System</b> — automated slot booking and truck arrival coordination at each site's gate</li>
+            <li><b>Gate Operating System</b> — truck and rail gate clearance and access control at every terminal</li>
+            <li><b>DGPS tracking</b> — real-time differential-GPS positioning feeding yard equipment and vehicle tracking</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="flagship-stack chips">
+        <span class="chip">.NET Core</span><span class="chip">ASP.NET Core</span><span class="chip">MediatR</span>
+        <span class="chip">MassTransit</span><span class="chip">NHibernate</span><span class="chip">FluentMigrator</span>
+        <span class="chip">Vue 3</span><span class="chip">TypeScript</span><span class="chip">Kubernetes (AWS EKS)</span>
+        <span class="chip">Helm</span><span class="chip">RabbitMQ</span><span class="chip">Keycloak</span>
+        <span class="chip">SQL Server</span><span class="chip">Elasticsearch/Kibana</span>
+        <span class="chip">Prometheus</span><span class="chip">Grafana</span><span class="chip">GitLab CI/CD</span>
+      </div>
+    </div>
+
+    <p class="work-grid-label">More from the Smart Port Management platform</p>
     <div class="work-grid">
 
       <div class="work-card">
