@@ -1,0 +1,10 @@
+# Internal source documents (not part of the deployed site)
+/Doc/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/

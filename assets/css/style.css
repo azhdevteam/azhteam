@@ -95,6 +95,11 @@ nav {
   padding: 0.65rem 0.25rem; border-bottom: 1px solid var(--border);
 }
 .mobile-menu.open { display: flex; }
+.mobile-upwork {
+  margin-top: 0.6rem; text-align: center; background: #14a800; color: #fff !important;
+  border-bottom: none !important; border-radius: 999px; padding: 0.75rem 1rem !important;
+  font-weight: 600;
+}
 
 @media (max-width: 860px) {
   .nav-links { display: none; }
@@ -120,6 +125,8 @@ nav {
 }
 .btn-secondary:hover { border-color: var(--border-h); background: var(--surface-h); transform: translateY(-2px); }
 .btn-block { width: 100%; }
+.btn-upwork { background: #14a800; color: #fff; }
+.btn-upwork:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(20,168,0,0.3); }
 
 /* ── Hero ── */
 header.hero { padding: 6.5rem 0 5.5rem; animation: fadeUp 0.7s ease both; }
@@ -239,8 +246,8 @@ section.tight { padding: 0 0 5.5rem; }
 }
 
 /* ── Portfolio / work ── */
-.work-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
-@media (max-width: 900px) { .work-grid { grid-template-columns: 1fr; } }
+.work-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+@media (max-width: 700px) { .work-grid { grid-template-columns: 1fr; } }
 
 .work-card {
   background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
